@@ -33,14 +33,17 @@ An interactive web application that predicts salaries based on user input such a
 ## 📁 Project Structure
 
 ```
-├── app.py                  # Main Streamlit application
-├── train_model.py         # Model training and export script
-├── models/
-│   ├── salary_predictor.pkl     # Trained model
-│   └── column_order.json        # Column order used in training
 ├── data/
-│   └── salary_data.csv          # Dataset for training and evaluation
+│   └── salary_data.csv          
+├── models/
+│   ├── column_order.json        
+│   └── salary_predictor.pkl     
+├── scripts/
+│   ├── app.py                   
+│   ├── generate_data.py         
+│   └── train_model.py           
 ├── README.md
+├── requirements.txt
 ```
 
 ---
@@ -49,8 +52,8 @@ An interactive web application that predicts salaries based on user input such a
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/ai-salary-predictor.git
-cd ai-salary-predictor
+git clone https://github.com/KrrishTayal/Employee-Salary-Prediction.git
+cd Employee-Salary-Prediction
 ```
 
 2. **Install dependencies:**
@@ -60,7 +63,7 @@ pip install -r requirements.txt
 
 3. **Run the app:**
 ```bash
-streamlit run app.py
+streamlit run scripts/app.py
 ```
 
 ---
@@ -93,18 +96,3 @@ streamlit run app.py
 
 ---
 
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-## 📄 License
-
-[MIT License](LICENSE)
-
----
-
-## 📬 Contact
-
-For feedback or inquiries, please contact [your-email@example.com].
