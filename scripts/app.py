@@ -178,7 +178,7 @@ def render_career_growth(df, model, column_order):
 
     st.subheader("Future Skills to Acquire")
     top_skills = ['Python', 'SQL', 'Machine Learning', 'AWS', 'JavaScript', 'Financial Modeling', 'Project Management', 'Leadership']
-    skills = []
+    future_skills = []
     cols_per_row = 4
 
     for row_start in range(0, len(top_skills), cols_per_row):
@@ -186,8 +186,8 @@ def render_career_growth(df, model, column_order):
         cols = st.columns(len(row_skills))
         for col, skill in zip(cols, row_skills):
             with col:
-                if st.checkbox(skill, key=f"skill_{skill}"):
-                    skills.append(skill)
+                if st.checkbox(skill, key=f"future_skill_{skill}"):
+                    future_skills.append(skill)
 
 
     if st.button("Generate Projection", key="proj_button"):
