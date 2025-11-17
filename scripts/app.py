@@ -53,7 +53,7 @@ def main():
     </style>
     """, unsafe_allow_html=True)
 
-    st.title(" AI-Powered Salary Predictor")
+    st.title(" WageWise: AI-Powered Salary Predictor")
     st.markdown("Predict your salary based on job market trends")
 
     st.sidebar.title("Navigation")
