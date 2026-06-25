@@ -32,7 +32,8 @@ def generate_salary_dataset(size=5000):
         'Remote': 1.0
     }
     
-  
+  #
+    
     company_sizes = ['Startup (1-50)', 'Small (50-200)', 'Medium (200-1000)', 'Large (1000+)']
     
    
